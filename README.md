@@ -18,7 +18,9 @@ First demo app for the 8x8 LED square.
    ```
    esptool.py --chip esp32 --port /dev/tty.SLAB_USBtoUART erase_flash
     ```
-4. Wait for the process to complete.
+4. Flash micropython onto the ESP32
+5.    Download from here https://micropython.org/download/ESP32_GENERIC/
+6.    Flash ESP32 'esptool.py --chip esp32 --port /dev/tty.usbserial-0001 --baud 460800 write_flash -z 0x1000 ../ESP32_GENERIC-20240602-v1.23.0.bin'
 ### Step 3: Upload Code to the ESP32
 1. Download the code from GitHub:
 ```
