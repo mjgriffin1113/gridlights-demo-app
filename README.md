@@ -25,10 +25,11 @@ First demo app for the 8x8 LED square.
 git clone https://github.com/mjgriffin1113/gridlights-demo-app
 ```
 2. Make sure Python is installed on your computer.
-3. Run the Python script to upload the code to the ESP32:
+3. Make sure ampy is installed and in your path. "pip install adafruit-ampy"
+4. Run the Python script to upload the code to the ESP32:
 ```
 python upload_to_esp32.py
 ```
-4. Access the LED Controller
+5. Access the LED Controller
 1. Once the upload is complete, navigate to 4.3.2.2 in your browser.
 2. Start using the app to control the LED light!
