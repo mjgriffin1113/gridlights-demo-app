@@ -35,3 +35,14 @@ python upload_to_esp32.py
 5. Access the LED Controller
 1. Once the upload is complete, navigate to 4.3.2.2 in your browser.
 2. Start using the app to control the LED light!
+
+# REPL User Guide
+Using the REPL
+to use, open a terminal in Pymakr in Projects/ and click connect, and then create terminal (note that a terminal places a lock on the entire serial line so no other program can use it while the serial line is open. This is one reason it is important to close serial connections properly)
+If the terminal was created, you should now see a python prompt. From there, import a module and you can now access its variables, functions, and classes. 
+
+To set the lights in REPL
+>>> from wled_control import WLEDController
+>>> wled = WLEDController("192.168.1.150")
+>>> wled.set_color(255, 0, 0)  # Set color to red
+>>> wled.turn_off()  # Turn off the LEDs
